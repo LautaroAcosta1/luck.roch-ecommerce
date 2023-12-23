@@ -1,0 +1,28 @@
+.aboutUs-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.aboutUs-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50px;
+}
+
+.aboutUs-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutUs-title {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.aboutUs-p {
+    font-size: 17px;
+}
