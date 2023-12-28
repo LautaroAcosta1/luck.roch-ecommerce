@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "name": "Bermuda beige",
+        "category": "bermuda",
+        "description": "Bermuda color beige, de hombre.",
+        "price": 30000,
+        "quantity": 10,
+        "image": "/assets/bermuda-beige.webp"
+    },
+    {
+        "id": 2,
+        "name": "Bermuda blanca",
+        "category": "bermuda",
+        "description": "Bermuda color blanco, de hombre.",
+        "price": 32000,
+        "quantity": 20,
+        "image": "/assets/bermuda-blanca.webp"
+    },
+    {
+        "id": 3,
+        "name": "Bermuda celeste",
+        "category": "bermuda",
+        "description": "Bermuda color celeste, de hombre.",
+        "price": 32000,
+        "quantity": 15,
+        "image": "/assets/bermuda-celeste.webp"
+    },
+    {
+        "id": 4,
+        "name": "Bermuda negra",
+        "category": "bermuda",
+        "description": "Bermuda color negra, de hombre.",
+        "price": 32000,
+        "quantity": 34,
+        "image": "/assets/bermuda-negra.webp"
+    },
+    {
+        "id": 5,
+        "name": "Bermuda rosa",
+        "category": "bermuda",
+        "description": "Bermuda color rosa, de hombre.",
+        "price": 35000,
+        "quantity": 12,
+        "image": "/assets/bermuda-rosa.webp"
+    },
+    {
+        "id": 5,
+        "name": "Bermuda verde",
+        "category": "bermuda",
+        "description": "Bermuda color verde, de hombre.",
+        "price": 34000,
+        "quantity": 23,
+        "image": "/assets/bermuda-verde.webp"
+    },
+    {
+        "id": 6,
+        "name": "Jean azul",
+        "category": "jeans",
+        "description": "Jean color azul, de hombre.",
+        "price": 45000,
+        "quantity": 23,
+        "image": "/assets/jean-azul.webp"
+    },
+    {
+        "id": 7,
+        "name": "Jean celeste",
+        "category": "jeans",
+        "description": "Jean color celeste, de hombre.",
+        "price": 46000,
+        "quantity": 32,
+        "image": "/assets/jean-celeste.webp"
+    },
+    {
+        "id": 8,
+        "name": "Jean negro",
+        "category": "jeans",
+        "description": "Jean color negro, de hombre.",
+        "price": 56000,
+        "quantity": 12,
+        "image": "/assets/jean-negro.webp"
+    },
+    {
+        "id": 9,
+        "name": "remera azul",
+        "category": "remera",
+        "description": "Remera color azul, unisex.",
+        "price": 20000,
+        "quantity": 34,
+        "image": "/assets/remera-azul.webp"
+    },
+    {
+        "id": 10,
+        "name": "remera blanca",
+        "category": "remera",
+        "description": "Remera color blanco, unisex.",
+        "price": 20000,
+        "quantity": 32,
+        "image": "/assets/remera-blanca.webp"
+    },
+    {
+        "id": 11,
+        "name": "remera gris",
+        "category": "remera",
+        "description": "Remera color gris, de hombre.",
+        "price": 34000,
+        "quantity": 12,
+        "image": "/assets/remera-gris.webp"
+    },
+    {
+        "id": 12,
+        "name": "remera negra",
+        "category": "remera",
+        "description": "Remera color negro, de hombre.",
+        "price": 25000,
+        "quantity": 14,
+        "image": "/assets/remera-negra.webp"
+    },
+    {
+        "id": 13,
+        "name": "remera salmon",
+        "category": "remera",
+        "description": "Remera color salmon, unisex.",
+        "price": 23000,
+        "quantity": 11,
+        "image": "/assets/remera-salmon.webp"
+    }
+]

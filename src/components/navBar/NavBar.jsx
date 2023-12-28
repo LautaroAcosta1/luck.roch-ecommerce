@@ -7,7 +7,7 @@ const NavBar = () => {
             <Navbar collapseOnSelect expand='lg' className='navBar'>
                 <div className='logo-container'>
                     <Nav.Link href={"/"} className='img-container'>
-                        <img src='logo.png' alt='logo' className='img'/>
+                        <img src='/assets/logo.png' alt='logo' className='img'/>
                     </Nav.Link>
                     <Nav.Link href={"/"} className='name-container'>
                         <h2 className='name'>LUCK.ROCH</h2>

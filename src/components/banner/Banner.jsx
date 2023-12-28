@@ -14,21 +14,21 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="imagen1.png"
+                        src="/assets/imagen1.png"
                         alt="First slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="imagen2.jpg"
+                        src="/assets/imagen2.jpg"
                         alt="Second slide"
                     />
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src="imagen3.jpg"
+                        src="/assets/imagen3.jpg"
                         alt="Third slide"
                     />
                 </Carousel.Item>

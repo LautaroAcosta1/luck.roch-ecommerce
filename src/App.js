@@ -11,10 +11,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/cart' element={<CartContent/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/service' element={<Service/>}/>
         <Route path='/contact' element={<Contact/>}/>
+        <Route path='/cart' element={<CartContent/>}/>
       </Routes>
     </BrowserRouter>
   );

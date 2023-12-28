@@ -1,16 +1,27 @@
-import { Link } from 'react-router-dom'
 import './footer.css'
 
 const Footer = () => {
     return (
         <footer className="footer-container">
-            <img className='footer-logo' src="logo.png" alt="Logo"/>
+            <img className='footer-logo' src="/assets/logo.png" alt="Logo"/>
             <div className='footer-socialIcons-container'>
-                <Link to={'/'} className='footer-socialIcons'>das</Link>
-                <Link to={'/'} className='footer-socialIcons'>asd</Link>
-                <Link to={'/'} className='footer-socialIcons'>dsa</Link>
-                <Link to={'/'} className='footer-socialIcons'>sda</Link>
+                <a href="https://wa.me/5491168792439" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/luck.roch.ind/" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-instagram"></i>
+                </a>
             </div>
+            <ul className='footer-menu-container'>
+                <li className='menu-item'>Términos y condiciones</li>
+                <li className='menu-item'>Cookies</li>
+                <li className='menu-item'>Privacidad</li>
+                <li className='menu-item'>Formas de envio</li>
+            </ul>
+            <span className='copyright'>© Luck.Roch. Todos los derechos reservados.</span>
         </footer>
     )
 }
