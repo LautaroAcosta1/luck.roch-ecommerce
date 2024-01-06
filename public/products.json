@@ -45,7 +45,7 @@
         "image": "/assets/bermuda-rosa.webp"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Bermuda verde",
         "category": "bermuda",
         "description": "Bermuda color verde, de hombre.",
@@ -54,7 +54,7 @@
         "image": "/assets/bermuda-verde.webp"
     },
     {
-        "id": 6,
+        "id": 7,
         "name": "Jean azul",
         "category": "jeans",
         "description": "Jean color azul, de hombre.",
@@ -63,7 +63,7 @@
         "image": "/assets/jean-azul.webp"
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Jean celeste",
         "category": "jeans",
         "description": "Jean color celeste, de hombre.",
@@ -72,7 +72,7 @@
         "image": "/assets/jean-celeste.webp"
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Jean negro",
         "category": "jeans",
         "description": "Jean color negro, de hombre.",
@@ -81,7 +81,7 @@
         "image": "/assets/jean-negro.webp"
     },
     {
-        "id": 9,
+        "id": 10,
         "name": "remera azul",
         "category": "remera",
         "description": "Remera color azul, unisex.",
@@ -90,7 +90,7 @@
         "image": "/assets/remera-azul.webp"
     },
     {
-        "id": 10,
+        "id": 11,
         "name": "remera blanca",
         "category": "remera",
         "description": "Remera color blanco, unisex.",
@@ -99,7 +99,7 @@
         "image": "/assets/remera-blanca.webp"
     },
     {
-        "id": 11,
+        "id": 12,
         "name": "remera gris",
         "category": "remera",
         "description": "Remera color gris, de hombre.",
@@ -108,7 +108,7 @@
         "image": "/assets/remera-gris.webp"
     },
     {
-        "id": 12,
+        "id": 13,
         "name": "remera negra",
         "category": "remera",
         "description": "Remera color negro, de hombre.",
@@ -117,7 +117,7 @@
         "image": "/assets/remera-negra.webp"
     },
     {
-        "id": 13,
+        "id": 14,
         "name": "remera salmon",
         "category": "remera",
         "description": "Remera color salmon, unisex.",
