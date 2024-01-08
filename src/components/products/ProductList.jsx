@@ -8,13 +8,14 @@ const ProductList = () => {
     const buyProducts = (product) => {
         console.log(product)
         setCart([...cart, product])
+        console.log(cart)
     }
 
     return data.map((product) => {
         return (
                 <div className="card-container" key={product.id}>
                     <div className="image-container">
-                        <img className="image" src={product.image} alt={product.name}/>
+                        <img className="card-image" src={product.image} alt={product.name}/>
                     </div>
                     <h3 className="card-name">{product.name}</h3>
                     <p className="card-description">{product.description}</p>
