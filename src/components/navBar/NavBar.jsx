@@ -1,4 +1,5 @@
 import { Nav, Navbar } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 import './navBar.css'
 
 const NavBar = () => {
@@ -6,24 +7,32 @@ const NavBar = () => {
         <div className='navBar-container'>
             <Navbar collapseOnSelect expand='lg' className='navBar'>
                 <div className='logo-container'>
-                    <Nav.Link href={"/"} className='img-container'>
+                    <NavLink to="/" className='img-container'>
                         <img src='/assets/logo.png' alt='logo' className='img'/>
-                    </Nav.Link>
-                    <Nav.Link href={"/"} className='name-container'>
+                    </NavLink>
+                    <NavLink to="/" className='name-container'>
                         <h2 className='name'>LUCK.ROCH</h2>
-                    </Nav.Link>
+                    </NavLink>
                 </div>
                 <Navbar.Toggle aria-controls='reponsive-navbar-nav'/>
                 <Navbar.Collapse>
-                    <Nav className="me-auto">
-                        <Nav.Link href={"/"}>Inicio</Nav.Link>
-                        <Nav.Link href={"/products"}>Productos</Nav.Link>
-                        <Nav.Link href={"/service"}>Servicio</Nav.Link>
-                        <Nav.Link href={"/contact"}>Contacto</Nav.Link>
-                    </Nav>
-                    <Nav.Link href={"/cart"} className='carrito-container'>
+                <Nav className="me-auto">
+                    <NavLink to="/" className="nav-link" activeclassname="active">
+                        Inicio
+                    </NavLink>
+                    <NavLink to="/products" className="nav-link" activeclassname="active">
+                        Productos
+                    </NavLink>
+                    <NavLink to="/service" className="nav-link" activeclassname="active">
+                        Servicio
+                    </NavLink>
+                    <NavLink to="/contact" className="nav-link" activeclassname="active">
+                        Contacto
+                    </NavLink>
+                </Nav>
+                    <NavLink to="/cart" className='carrito-container'>
                         <i className="fa-solid fa-cart-shopping" id='cart'></i>
-                    </Nav.Link>
+                    </NavLink>
                 </Navbar.Collapse>
             </Navbar>
         </div>

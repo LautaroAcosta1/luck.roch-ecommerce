@@ -23,9 +23,14 @@
     height: 40px;
 }
 
+.name-container {
+    text-decoration: none;
+}
+
 .name {
     font-size: 18px;
     margin-top: 10px;
+    color: #000a01;
 }
 
 .me-auto {
@@ -38,4 +43,5 @@
 
 #cart {
     font-size: 19px;
+    color: #000a01;
 }
