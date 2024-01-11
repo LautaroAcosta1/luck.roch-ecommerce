@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../context/DataContext";
+import './cartContent.css'
 
 const CartElements = () => {
     const {cart} = useContext(dataContext)
@@ -7,9 +8,9 @@ const CartElements = () => {
     return cart.map((product) => {
         return (
             <div className="cartContent" key={product.id}>
-                <img src={product.image} alt={product.name}/>
-                <h3 className="name">{product.name}</h3>
-                <h4 className="price">${product.price}</h4>
+                <img className="image-cart" src={product.image} alt={product.name}/>
+                <h3 className="name-cart">{product.name}</h3>
+                <h4 className="price-cart">${product.price}</h4>
             </div>
         )
     })

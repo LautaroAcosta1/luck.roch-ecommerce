@@ -1,0 +1,30 @@
+.cartElements-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.cartContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 150px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 2px 4px 10px 5px rgba(105, 105, 105, 0.2);
+}
+
+.image-cart {
+    height: 160px;
+    width: 160px;
+}
+
+.cartTotal {
+    align-items: center;
+}
+
+.cartMessage {
+    text-align: center;
+}
