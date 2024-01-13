@@ -11,8 +11,14 @@ const CartTotal = () => {
         <div className="cartTotal">
             <h1 className="cartTotal-text">Resumen de compra</h1>
             <div className="horizontal-line"></div>
-            <h2 className="cartTotal-subtotal">SubtotaL ${total}</h2>
-            <h3 className="cartTotal-total">Total ${total}</h3>
+            <div className="cartTotal-subtotal-container">
+                <h3 className="cartTotal-subtotal">SubtotaL</h3>
+                <h3 className="subtotal">${total}</h3>
+            </div>
+            <div className="cartTotal-total-container">
+                <h2 className="cartTotal-total">Total</h2>
+                <h2 className="total">${total}</h2>
+            </div>
             <button className="btnBuy">
                 <span className="btnBuy-circle" aria-hidden="true">
                     <span className="btnBuy-icon btnBuy-arrow"></span>

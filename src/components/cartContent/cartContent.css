@@ -40,16 +40,40 @@
     margin: 10px 0;
 }
 
+.cartTotal-subtotal-container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin-top: 5px;
+}
+
 .cartTotal-subtotal {
     font-size: medium;
 }
 
+.subtotal {
+    font-size: medium;
+}
+
+.cartTotal-total-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 100px;
+}
+
 .cartTotal-total {
     font-size: large;
+    font-weight: 600;
+}
+
+.total {
+    font-size: large;
+    font-weight: 600;
 }
 
 .btnBuy {
-    margin-top: 170px;
+    margin-top: 150px;
 }
 
 button {
