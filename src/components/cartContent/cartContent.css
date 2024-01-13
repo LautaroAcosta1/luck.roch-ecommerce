@@ -49,7 +49,7 @@
 }
 
 .btnBuy {
-    margin-top: 100px;
+    margin-top: 170px;
 }
 
 button {
@@ -138,6 +138,35 @@ button:hover .btnBuy-circle .btnBuy-icon.btnBuy-arrow {
 
 button:hover .btnBuy-text {
     color: #fff;
+}
+
+.continueBuy {
+    color: rgb(20, 20, 20);
+    position: relative;
+    padding-left: 4px;
+    margin-top: 10px;
+}
+
+.continueBuy:hover {
+    text-decoration: underline;
+}
+
+.continueBuy::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-bottom: solid 2px rgb(20, 20, 20);
+    border-left: solid 2px rgb(20, 20, 20);
+    border-radius: 2px;
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform .4s;
+}
+
+.continueBuy:hover::before {
+    transform: translateX(-4px) translateY(-50%) rotate(45deg);
 }
 
 .advertising {

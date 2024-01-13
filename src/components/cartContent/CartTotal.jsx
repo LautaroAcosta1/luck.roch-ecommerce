@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from "../context/DataContext";
+import { Link } from "react-router-dom";
 
 const CartTotal = () => {
     const {cart} = useContext(dataContext)
@@ -18,6 +19,7 @@ const CartTotal = () => {
                 </span>
                 <span className="btnBuy-text">Iniciar Compra</span>
             </button>
+            <Link className="continueBuy" to={'/products'}>Seguir comprando!</Link>
         </div>
     )
 }
