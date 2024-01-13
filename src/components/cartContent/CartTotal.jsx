@@ -8,7 +8,10 @@ const CartTotal = () => {
 
     return (
         <div className="cartTotal">
-            <h3>total a pagar: ${total}</h3>
+            <h1 className="cartTotal-text">Resumen de compra</h1>
+            <div class="horizontal-line"></div>
+            <h2 className="cartTotal-subtotal">SubtotaL ${total}</h2>
+            <h3 className="cartTotal-total">Total ${total}</h3>
         </div>
     )
 }

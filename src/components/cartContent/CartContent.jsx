@@ -1,4 +1,4 @@
-import CartElements from "./CartElements"
+import CartElements from './CartElements';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom'
 import CartTotal from "./CartTotal";
@@ -16,12 +16,20 @@ const CartContent = () => {
     const {cart} = useContext(dataContext)
 
     return cart.length > 0 ? (
-        <div className="cartElements-container">
-            <>
-                <CartElements/>
-                <CartTotal/>
-            </>
-        </div>
+        <>
+            <div className='cartContent-container'>
+                <div className="cartElements-container">
+                    <CartElements/>
+                </div>
+                <div className='cartTotal-container'>
+                    <CartTotal/>
+                    <div className='advertising'>
+                        <p>publicidad</p>
+                    </div>
+                </div>
+            </div>
+        </>
+        
     ) : (
         <h2 className="cartMessage">Carrito vacio.</h2>
     )
