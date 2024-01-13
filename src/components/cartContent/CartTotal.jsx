@@ -4,7 +4,7 @@ import { dataContext } from "../context/DataContext";
 const CartTotal = () => {
     const {cart} = useContext(dataContext)
 
-    const total = cart.reduce((acum, elem) => acum + elem.price, 0)
+    const total = cart.reduce((acum, elem) => acum + elem.price * elem.quantity, 0)
 
     return (
         <div className="cartTotal">

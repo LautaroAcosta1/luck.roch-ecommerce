@@ -45,3 +45,21 @@
     font-size: 19px;
     color: #000a01;
 }
+
+.number-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+
+.number {
+    color: #000a01;
+    font-weight: bold;
+    font-size: 10px;
+}

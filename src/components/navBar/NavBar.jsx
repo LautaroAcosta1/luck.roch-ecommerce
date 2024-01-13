@@ -1,8 +1,13 @@
 import { Nav, Navbar } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import TotalItems from '../cartContent/TotalItems'
+import { useContext } from "react";
+import { dataContext } from "../context/DataContext";
 import './navBar.css'
 
 const NavBar = () => {
+    const { cart } = useContext(dataContext)
+
     return (
         <div className='navBar-container'>
             <Navbar collapseOnSelect expand='lg' className='navBar'>
@@ -32,6 +37,9 @@ const NavBar = () => {
                 </Nav>
                     <NavLink to="/cart" className='carrito-container'>
                         <i className="fa-solid fa-cart-shopping" id='cart'></i>
+                        <div className='number-container'>
+                            {cart.length > 0 ? <TotalItems/> : null}
+                        </div>
                     </NavLink>
                 </Navbar.Collapse>
             </Navbar>

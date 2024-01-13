@@ -1,30 +1,84 @@
 .cartElements-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    align-items: flex-start;
+    gap: 10px;
     margin-top: 10px;
+    margin-left: 10px;
 }
 
 .cartContent {
+    height: 120px;
+    width: 900px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 150px;
-    padding: 20px 40px;
-    border-radius: 30px;
+    gap: 60px;
+    padding: 10px 20px;
+    border-radius: 10px;
     box-shadow: 2px 4px 10px 5px rgba(105, 105, 105, 0.2);
 }
 
 .image-cart {
-    height: 160px;
-    width: 160px;
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
 }
 
-.cartTotal {
+.name-cart {
+    font-size: 18px;
+}
+
+.price-cart {
+    font-size: 18px;
+}
+
+.quantity-cart {
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .cartMessage {
     text-align: center;
+}
+
+.counter-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 50px;
+}
+
+.btnCounter {
+    height: 30px;
+    width: 30px;
+    margin-top: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #000;
+    background-color: rgb(228, 228, 228);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.btnCounter:hover {
+    background-color: #000a01;
+    color: #fff;
+}
+
+.quantity {
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 14px;
+}
+
+#btnDelete-cart {
+    color: red;
+    border: none;
 }
