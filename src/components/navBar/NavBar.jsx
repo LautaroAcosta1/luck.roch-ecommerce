@@ -35,8 +35,8 @@ const NavBar = () => {
                         Contacto
                     </NavLink>
                 </Nav>
-                    <NavLink to="/cart" className='carrito-container'>
-                        <i className="fa-solid fa-cart-shopping" id='cart'></i>
+                    <NavLink to="/cart" className='cart-container'>
+                        <i className="fa-solid fa-cart-shopping" id='cart-navBar'></i>
                         <div className='number-container'>
                             {cart.length > 0 ? <TotalItems/> : null}
                         </div>

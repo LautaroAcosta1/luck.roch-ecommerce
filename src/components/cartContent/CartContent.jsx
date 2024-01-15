@@ -31,7 +31,12 @@ const CartContent = () => {
         </>
         
     ) : (
-        <h2 className="cartMessage">Carrito vacio.</h2>
+        <>
+            <div className='emptyCart-container'>
+                <h2 className="cartMessage">Carrito vacio.</h2>
+                <i className="fa-solid fa-cart-shopping" id='emptyCart'></i>
+            </div>
+        </>
     )
 }
 

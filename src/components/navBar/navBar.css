@@ -37,11 +37,11 @@
     gap: 5px;
 }
 
-.carrito-container {
+.cart-container {
     margin-right: 20px;
 }
 
-#cart {
+#cart-navBar {
     font-size: 19px;
     color: #000a01;
 }
