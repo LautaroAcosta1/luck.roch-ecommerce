@@ -4,36 +4,47 @@ import './banner.css'
 
 const Banner = () => {
     return (
-        <div className='carousel-container'>
-            <div className='texto-container'>
-                <h1 className='titulo'>Descubri las mejores ofertas</h1>
-                <h2 className='subtitulo'>Encontra prendas de alta calidad a precios increibles.</h2>
-                <Button href={"/products"} className='btn'>Explorar</Button>
+        <>
+            <div className='slider-container'>
+                <button className="btn-23">
+                    <span className="marquee">¡Envios gratis a partir de $80.000!</span>
+                {/*<span className="marquee">3 cuotas sin interes en todo</span>
+                    <span className="marquee">Cambios y devoluciones gratis</span>
+                    <span className="marquee">Envios a todo el país</span> */}
+                </button>
             </div>
-            <Carousel data-bs-theme="dark" className='carousel'>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/assets/imagen1.png"
-                        alt="First slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/assets/imagen2.jpg"
-                        alt="Second slide"
-                    />
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                        className="d-block w-100"
-                        src="/assets/imagen3.jpg"
-                        alt="Third slide"
-                    />
-                </Carousel.Item>
-            </Carousel>
-        </div>
+            <div className='carousel-container'>
+                <div className='texto-container'>
+                    <h1 className='titulo'>Descubri las mejores ofertas</h1>
+                    <h2 className='subtitulo'>Encontra prendas de alta calidad a precios increibles.</h2>
+                    <Button href={"/products"} className='btn'>Explorar</Button>
+                </div>
+                <Carousel data-bs-theme="dark" className='carousel'>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="/assets/imagen1.png"
+                            alt="First slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="/assets/imagen2.jpg"
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src="/assets/imagen3.jpg"
+                            alt="Third slide"
+                        />
+                    </Carousel.Item>
+                </Carousel>
+            </div>
+        </>
+        
     )
 }
 
