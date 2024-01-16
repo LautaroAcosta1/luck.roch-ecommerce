@@ -1,24 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
-import Button from 'react-bootstrap/Button';
 import './banner.css'
+import Slider from './Slider';
 
 const Banner = () => {
     return (
         <>
             <div className='slider-container'>
-                <button className="btn-23">
-                    <span className="marquee">¡Envios gratis a partir de $80.000!</span>
-                {/*<span className="marquee">3 cuotas sin interes en todo</span>
-                    <span className="marquee">Cambios y devoluciones gratis</span>
-                    <span className="marquee">Envios a todo el país</span> */}
-                </button>
+                <Slider/>
             </div>
             <div className='carousel-container'>
-                <div className='texto-container'>
-                    <h1 className='titulo'>Descubri las mejores ofertas</h1>
-                    <h2 className='subtitulo'>Encontra prendas de alta calidad a precios increibles.</h2>
-                    <Button href={"/products"} className='btn'>Explorar</Button>
-                </div>
                 <Carousel data-bs-theme="dark" className='carousel'>
                     <Carousel.Item>
                         <img
