@@ -257,10 +257,6 @@ button:hover .btnBuy-text {
     gap: 20px;
 }
 
-.cartMessage {
-    text-align: center;
-}
-
 .cart-itemCounter-container {
     height: 60px;
     width: 100px;
@@ -367,3 +363,15 @@ button:hover .btnBuy-text {
     transition-duration: .3s;
 }
 
+.emptyCart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 130px;
+    gap: 10px;
+}
+
+#emptyCart {
+    font-size: 100px;
+}

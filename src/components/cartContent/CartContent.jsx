@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import CartTotal from "./CartTotal";
 import { useContext } from "react";
 import { dataContext } from "../context/DataContext";
+import { Link } from 'react-router-dom';
 import './cartContent.css'
 
 const CartContent = () => {
@@ -33,8 +34,8 @@ const CartContent = () => {
     ) : (
         <>
             <div className='emptyCart-container'>
-                <h2 className="cartMessage">Carrito vacio.</h2>
-                <i className="fa-solid fa-cart-shopping" id='emptyCart'></i>
+                <i className="fa-solid fa-cart-plus" id='emptyCart'></i>
+                <Link className="continueBuy" to={'/products'}>Empezar a comprar!</Link>
             </div>
         </>
     )
