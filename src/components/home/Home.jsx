@@ -7,7 +7,7 @@ const Home = () => {
     const location = useLocation()
 
     useEffect(() => {
-        window.scrollTo(0, 0) // Reset the scroll.
+        window.scrollTo(0, 0)
     }, [location.pathname])
 
     return (

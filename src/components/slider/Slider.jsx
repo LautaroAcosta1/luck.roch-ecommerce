@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './banner.css';
+import './slider.css';
 
 const Slider = () => {
     const phrases = [
@@ -29,10 +29,12 @@ const Slider = () => {
     }, [currentPhraseIndex]);
 
     return (
-        <div className="slider">
-            <p className={`slider-text ${animationActive ? 'fade-in' : ''}`}>
-                {phrases[currentPhraseIndex]}
-            </p>
+        <div className='slider-container'>
+            <div className="slider">
+                <p className={`slider-text ${animationActive ? 'fade-in' : ''}`}>
+                    {phrases[currentPhraseIndex]}
+                </p>
+            </div>
         </div>
     );
 };

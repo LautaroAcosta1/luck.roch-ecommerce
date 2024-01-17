@@ -1,0 +1,24 @@
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+}
+
+.slider {
+    margin: 4px;
+    position: relative;
+}
+
+.slider-text {
+    color: #fff;
+    margin: 0%;
+    line-height: 100%;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}

@@ -11,11 +11,13 @@ import './index.css';
 import NavBar from './components/navBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/footer/Footer';
+import Slider from './components/slider/Slider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <DataProvider>
     <BrowserRouter>
+      <Slider/>
       <NavBar/>
       <Routes>
         <Route path='/' element={<Home/>}/>

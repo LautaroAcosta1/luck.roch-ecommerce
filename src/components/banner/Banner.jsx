@@ -1,13 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 import './banner.css'
-import Slider from './Slider';
 
 const Banner = () => {
     return (
         <>
-            <div className='slider-container'>
-                <Slider/>
-            </div>
             <div className='carousel-container'>
                 <Carousel data-bs-theme="dark" className='carousel'>
                     <Carousel.Item>
