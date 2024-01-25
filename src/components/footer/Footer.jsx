@@ -21,7 +21,7 @@ const Footer = () => {
                 <li className='menu-item'>Privacidad</li>
                 <li className='menu-item'>Formas de envio</li>
             </ul>
-            <span className='copyright'>© Luck.Roch. Todos los derechos reservados.</span>
+            <span className='copyright'>© Luck Roch. Todos los derechos reservados.</span>
         </footer>
     )
 }

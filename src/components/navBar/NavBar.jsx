@@ -16,7 +16,7 @@ const NavBar = () => {
                         <img src='/assets/logo.png' alt='logo' className='img'/>
                     </NavLink>
                     <NavLink to="/" className='name-container'>
-                        <h2 className='name'>LUCK.ROCH</h2>
+                        <h2 className='name'>LUCK ROCH</h2>
                     </NavLink>
                 </div>
                 <Navbar.Toggle aria-controls='reponsive-navbar-nav'/>
