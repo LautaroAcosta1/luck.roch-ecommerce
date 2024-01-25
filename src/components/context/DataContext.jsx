@@ -1,16 +1,15 @@
 import { createContext, useState, useEffect } from "react"
-import axios from "axios"
 
 
 export const dataContext = createContext()
 
 const DataProvider = ({children}) => {
-    const [data, setData] = useState([])
-    const [cart, setCart] = useState([])
+    const savedCart = JSON.parse(localStorage.getItem("cart")) || []
+    const [cart, setCart] = useState(savedCart)
 
     useEffect (() => {
-        axios("products.json").then((res) => setData(res.data))
-    },[])
+        localStorage.setItem("cart", JSON.stringify(cart))
+    },[cart])
 
     const buyProducts = (product) => {
         const productRepeat = cart.find((item) => item.id === product.id)
@@ -23,7 +22,7 @@ const DataProvider = ({children}) => {
     }
 
     return (
-        <dataContext.Provider value={{data, cart, setCart, buyProducts}}>
+        <dataContext.Provider value={{cart, setCart, buyProducts}}>
             {children}
         </dataContext.Provider>
     )
