@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CartContent from './components/cartContent/CartContent'
 import Products from './components/products/Products';
 import Service from './components/service/Service';
-import Contact from './components/contact/Contact';
 import Home from './components/home/Home'
 import './index.css';
 import NavBar from './components/navBar/NavBar';
@@ -23,7 +22,6 @@ root.render(
         <Route path='/' element={<Home/>}/>
         <Route path='/products' element={<Products/>}/>
         <Route path='/service' element={<Service/>}/>
-        <Route path='/contact' element={<Contact/>}/>
         <Route path='/cart' element={<CartContent/>}/>
       </Routes>
       <Footer/>

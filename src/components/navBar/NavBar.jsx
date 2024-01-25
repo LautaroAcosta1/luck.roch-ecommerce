@@ -31,9 +31,6 @@ const NavBar = () => {
                     <NavLink to="/service" className="nav-link" activeclassname="active">
                         Servicio
                     </NavLink>
-                    <NavLink to="/contact" className="nav-link" activeclassname="active">
-                        Contacto
-                    </NavLink>
                 </Nav>
                     <NavLink to="/cart" className='cart-container'>
                         <i className="fa-solid fa-cart-shopping" id='cart-navBar'></i>

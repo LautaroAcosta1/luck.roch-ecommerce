@@ -10,7 +10,7 @@ const CartTotal = () => {
     return (
         <div className="cartTotal">
             <h1 className="cartTotal-text">Resumen de compra</h1>
-            <div className="horizontal-line"></div>
+            <div className="cartTotal-horizontal-line"></div>
             <div className="cartTotal-subtotal-container">
                 <h3 className="cartTotal-subtotal">SubtotaL</h3>
                 <h3 className="subtotal">${total}</h3>
