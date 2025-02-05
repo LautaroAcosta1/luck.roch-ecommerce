@@ -8,7 +8,11 @@ const ProductList = () => {
     const {buyProducts} = useContext(dataContext)
 
     useEffect(() => {
-        axios("products.json").then((res) => setData(res.data));
+        axios.get("http://localhost:5000/api/products")
+            .then((res) => setData(res.data))
+            .catch(error => {
+                console.error("Hubo un error al obtener los productos:", error);
+            });
     }, []);
 
     return data.map((product) => {
