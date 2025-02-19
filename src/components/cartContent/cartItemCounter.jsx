@@ -5,9 +5,9 @@ const CartItemCounter = ({product}) => {
     const { cart, setCart, buyProducts } = useContext(dataContext)
 
     const decrese = () => {
-        const productRepeat = cart.find((item) => item.id === product.id)
+        const productRepeat = cart.find((item) => item._id === product._id)
 
-        productRepeat.quantity !== 1 && setCart(cart.map((item) => (item.id === product.id ? {...product, quantity: productRepeat.quantity - 1} : item)))
+        productRepeat.quantity !== 1 && setCart(cart.map((item) => (item._id === product._id ? {...product, quantity: productRepeat.quantity - 1} : item)))
     }
 
     return (

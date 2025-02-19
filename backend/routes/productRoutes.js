@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 // Ruta para agregar un nuevo producto
 router.post("/", async (req, res) => {
     try {
-        const { name, description, price, image } = req.body;
+        const { name, category, price, imageUrl, quantity} = req.body;
 
         // Validación básica
         if (!name || !price) {
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
         }
 
         // Crear el nuevo producto
-        const newProduct = new Product({ name, description, price, image });
+        const newProduct = new Product({ name, category, price, imageUrl, quantity });
 
         // Guardar el producto en la base de datos
         await newProduct.save();
@@ -44,16 +44,16 @@ router.post("/", async (req, res) => {
 // Ruta para actualizar un producto existente
 router.patch("/:id", async (req, res) => {
     try {
-        const { name, description, price, image } = req.body;
+        const { name, category, price, imageUrl, quantity} = req.body;
         const { id } = req.params;
 
         // Validar que al menos uno de los campos esté presente
-        if (!name && !description && !price && !image) {
+        if (!name && !category && !price && !imageUrl && !quantity) {
             return res.status(400).json({ message: "Debe proporcionar al menos un campo para actualizar" });
         }
 
         // Crear un objeto de datos con los campos enviados
-        const productData = { name, price, description, image };
+        const productData = { name, category, price, imageUrl, quantity};
 
         // Filtrar campos vacíos
         for (let key in productData) {

@@ -12,10 +12,10 @@ const DataProvider = ({children}) => {
     },[cart])
 
     const buyProducts = (product) => {
-        const productRepeat = cart.find((item) => item.id === product.id)
+        const productRepeat = cart.find((item) => item._id === product._id)
 
         if(productRepeat) {
-            setCart(cart.map((item) => (item.id === product.id ? {...product, quantity: productRepeat.quantity + 1} : item)))
+            setCart(cart.map((item) => (item._id === product._id ? {...product, quantity: productRepeat.quantity + 1} : item)))
         } else {
             setCart([...cart, product])
         }

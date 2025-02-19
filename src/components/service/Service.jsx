@@ -1,6 +1,15 @@
 import './service.css'
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom'
 
 const Service = () => {
+
+    const location = useLocation()
+
+    useEffect(() => {
+        window.scrollTo(0, 0) // Reset the scroll.
+    }, [location.pathname])
+
     return (
         <div className='service-container'>
             <h2 className='service-title'>Política de Devolución</h2>
