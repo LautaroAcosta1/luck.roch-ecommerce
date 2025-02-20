@@ -22,7 +22,6 @@ const ProductList = () => {
                         <img className="card-image" src={product.imageUrl} alt={product.name}/>
                     </div>
                     <h3 className="card-name">{product.name}</h3>
-                    <p className="card-description">{product.category}</p>
                     <h2 className="card-price">${product.price}</h2>
                     <button type="button" className="button" onClick={() => buyProducts(product)}>
                         <span className="button__text">Agregar</span>
