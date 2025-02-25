@@ -1,4 +1,4 @@
-# Luck Roch - Ecommerce
+# Luck Roch - Ecommerce (https://luckroch.netlify.app/)
 
 Este es un proyecto de e-commerce de ropa desarrollado con **React** en el frontend y un backend con **Node.js, Express y MongoDB Atlas**. El frontend está alojado en **Netlify** y el backend en **Vercel**.
 
