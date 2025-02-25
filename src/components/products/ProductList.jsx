@@ -8,7 +8,7 @@ const ProductList = () => {
     const {buyProducts} = useContext(dataContext)
 
     useEffect(() => {
-        axios.get("http://localhost:5000/api/products")
+        axios.get("https://luck-roch-ecommerce-back.onrender.com/api/products")
             .then((res) => setData(res.data))
             .catch(error => {
                 console.error("Hubo un error al obtener los productos:", error);
